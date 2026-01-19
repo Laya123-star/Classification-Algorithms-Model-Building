@@ -129,13 +129,38 @@ These metrics provide a comprehensive understanding of model performance.
 
 ## 🧠 Key Observations
 
-- ✔ Feature scaling significantly improved SVM and k-NN performance.
-- ✔ Random Forest achieved high accuracy with good generalization.
-- ✔ Logistic Regression performed well due to the dataset’s structure.
-- ✔ Decision Tree showed signs of overfitting.
-- ✔ SVM provided strong classification performance.
+✔ Feature scaling significantly improved the performance of SVM and k-NN classifiers.  
+✔ Logistic Regression and SVM (RBF kernel) achieved the highest accuracy, indicating strong class separability in the dataset.  
+✔ Random Forest provided good generalization but did not outperform linear and margin-based models.  
+✔ k-NN performed reasonably well but was slightly affected by noise and distance sensitivity.  
+✔ The unpruned Decision Tree showed signs of overfitting, resulting in the lowest accuracy.  
+✔ Pruning the Decision Tree improved performance compared to the unpruned version.
 
 ---
+
+## 📊 Model Performance Comparison
+
+| Model                  | Accuracy |
+|------------------------|----------|
+| Logistic Regression    | 0.982456 |
+| SVM (RBF)              | 0.982456 |
+| k-NN                   | 0.956140 |
+| Random Forest          | 0.956140 |
+| Pruned Decision Tree   | 0.921053 |
+| Decision Tree          | 0.912281 |
+
+---
+
+## 🏆 Best and Worst Performing Models
+
+- **Best Performing Algorithm(s):**  
+  Logistic Regression and SVM (RBF)  
+  **Accuracy:** 0.982
+
+- **Worst Performing Algorithm:**  
+  Decision Tree  
+  **Accuracy:** 0.912
+
 
 ## 🛠 Tech Stack
 
@@ -147,7 +172,7 @@ These metrics provide a comprehensive understanding of model performance.
 | Matplotlib | Visualization |
 | Seaborn | Statistical plots |
 | Scikit-learn | Machine learning models |
-| Jupyter Notebook | Development environment |
+| Google Collab Notebook | Development environment |
 
 ---
 
@@ -162,7 +187,7 @@ Classification-Algorithms-Model-Building/
 
 ## 🚀 How to Run the Project
 
-1. Open the notebook in **Jupyter Notebook** or **Google Colab**.
+1. Open the notebook in **Google Colab**.
 2. Run all cells sequentially.
 3. The notebook will execute preprocessing, model training, evaluation, and comparison.
 
