@@ -23,7 +23,7 @@ The project includes:
  🔹 Implementation of multiple classification algorithms  
  🔹 Model evaluation and comparison  
  🔹 Interpretation of results  
- 🔹 Clean and reproducible Jupyter Notebook  
+ 🔹 Clean and reproducible Google Collab Notebook  
 
 ---
 
@@ -57,11 +57,15 @@ The dataset was converted into a Pandas DataFrame for better readability and man
 ✔ **Missing Value Check:**  
 The dataset was checked for missing values. No missing values were found.
 
+✔ **Duplicate Value Check:**  
+The dataset was examined for duplicate records to ensure data integrity.  
+No duplicate entries were identified in the dataset.
+
 ✔ **Train–Test Split:**  
 The dataset was split into training and testing sets to evaluate model performance on unseen data.
 
 ✔ **Feature Scaling:**  
-Standardization was applied using `StandardScaler` for algorithms sensitive to feature magnitude
+Standardization was applied using `StandardScaler` for algorithms sensitive to feature magnitude  
 such as Logistic Regression, SVM, and k-NN.
 
 **Why preprocessing is necessary:**
@@ -69,7 +73,8 @@ such as Logistic Regression, SVM, and k-NN.
 - Improves convergence of gradient-based models
 - Enhances distance-based model performance
 
----
+  ---
+
 
 ## 🤖 Classification Algorithms Implemented
 
