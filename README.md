@@ -188,6 +188,3 @@ This project was created as part of a **Machine Learning academic assignment**, 
 Thanks to **Entri Elevate** for guidance and support throughout this project.
 
 ---
-Thanks to **Entri Elevate** for guidance and support.
-
----
